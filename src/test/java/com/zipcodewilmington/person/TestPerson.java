@@ -95,4 +95,59 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetOwnsHouse(){
+        Person person = new Person();
+        Boolean expected = true;
+
+        person.setOwnsHouse(expected);
+
+        Boolean actual = person.getOwnsHouse();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetOwnsCar(){
+        Person person = new Person();
+        Boolean expected = true;
+
+        person.setOwnsCar(expected);
+
+        Boolean actual = person.getOwnsCar();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetNumOfFamily(){
+        Person person = new Person();
+        Integer expected = 5;
+
+        person.setNumOfFamily(expected);
+
+        Integer actual = person.getNumOfFamily();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetNameOfDog() {
+        Person person = new Person();
+        String expected = "Fido";
+
+        person.setNameOfDog(expected);
+
+        String actual = person.getNameOfDog();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetMarried(){
+        Person person = new Person();
+        Boolean expected = false;
+
+        person.setMarried(expected);
+
+        Boolean actual = person.getMarried(); // ;-;
+        Assert.assertEquals(expected, actual);
+    }
 }
